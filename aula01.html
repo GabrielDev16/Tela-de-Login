@@ -1,18 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Página de Login</title>
-</head>
-<body>
-    <div class="container_p">
-        <div class="tela_log">
-            <div class="logo_img">
-                <img src="data:image/png;base64,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" alt="Imagem para tela de login">
-            </div>
+  </head>
+  <body>
+    <main class="container_p">
+      <section class="tela_log">
+        <!-- Logo da aplicação -->
+        <div class="logo_img">
+          <img
+            src="data:image/png;base64,..."
+            alt="Imagem para tela de login"
+          />
         </div>
-    </div>
-</body>
+
+        <!-- Formulário de login -->
+        <form>
+          <div class="form_group">
+            <label for="email">Email:</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="email"
+              required
+              maxlength="20"
+            />
+          </div>
+
+          <div class="form_group">
+            <label for="senha">Senha:</label>
+            <input
+              type="password"
+              id="senha"
+              placeholder="senha"
+              required
+              maxlength="20"
+            />
+          </div>
+
+          <div class="form_group termo">
+            <input type="checkbox" id="termo" />
+            <label for="termo">Aceito os <strong>Termos de Log</strong></label>
+          </div>
+
+          <div class="buttons">
+            <button type="submit">Enviar</button>
+            <button type="button">
+              <i class="fa-brands fa-google"></i> Google
+            </button>
+          </div>
+        </form>
+      </section>
+    </main>
+  </body>
 </html>
