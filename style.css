@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    background-color: #FFFF12;
+}
+
 .container_p{
     display: grid;
     justify-content: center;
@@ -12,8 +16,11 @@
 
 .tela_log{
     width: 500px;
-    height: 450px;
+    height: 380px;
     border: 1px solid black;
+    border-radius: 9px;
+    background-color: #F6EEE6;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .logo{
@@ -27,19 +34,29 @@
 .form_group{
     margin-left: 20px;
     width: 450px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .buttons{
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 60px;
 }
 
 .input{
     width: 100%;
     height: 29px;
+    padding: 4px;
     border-radius: 6px;
     margin: 6px 0px 6px 0px;
+    border: 1px solid rgba(0, 0, 0, 0.514);
+}
+.input:focus{
+    border: 2px solid blue;
+    box-shadow: blue 0px 2px 4px;
+    outline: none;
 }
 
 .form_group termo{
@@ -47,4 +64,27 @@
 
 }
 
-.
+strong{
+    color: blue;
+}
+
+
+
+button{
+    margin-top: 6px;
+    height: 30px;
+    width: 190px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 500px;
+    border-radius: 5px;
+    background-color: blue;
+    color: #fff;
+}
+
+button:hover{
+    background-color: #fff;
+    color: blue;
+    transition: 0.5s ease-in-out;
+    border: 1px solid blue;
+}
