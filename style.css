@@ -1,90 +1,99 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    box-sizing: border-box;
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
 }
 
-body{
-    background-color: #FFFF12;
+body {
+  background-color: #1B4BD9;
 }
 
-.container_p{
-    display: grid;
-    justify-content: center;
-    margin-top: 10%;
+.container_p {
+  display: grid;
+  justify-content: center;
+  margin-top: 10%;
 }
 
-.tela_log{
-    width: 500px;
-    height: 380px;
-    border: 1px solid black;
-    border-radius: 9px;
-    background-color: #F6EEE6;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+.tela_log {
+  width: 500px;
+  height: 380px;
+  border: 1px solid black;
+  border-radius: 9px;
+  background-color: #E7E7E7;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  flex-wrap: wrap;
 }
 
-.logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top:25px;
-    margin-bottom: 25px;
+.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
-.form_group{
-    margin-left: 20px;
-    width: 450px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 20px;
-    font-weight: 600;
+.form_group {
+  margin-left: 20px;
+  width: 450px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 600;
 }
 
-.buttons{
-    display: flex;
-    justify-content: center;
-    gap: 60px;
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
 }
 
-.input{
-    width: 100%;
-    height: 29px;
-    padding: 4px;
-    border-radius: 6px;
-    margin: 6px 0px 6px 0px;
-    border: 1px solid rgba(0, 0, 0, 0.514);
+.input {
+  width: 100%;
+  height: 29px;
+  padding: 4px;
+  border-radius: 6px;
+  margin: 6px 0px 6px 0px;
+  border: 1px solid rgba(0, 0, 0, 0.514);
 }
-.input:focus{
-    border: 2px solid blue;
-    box-shadow: blue 0px 2px 4px;
-    outline: none;
-}
-
-.form_group termo{
-    margin: 6px 0px 6px 0px;
-
+.input:focus {
+  border: 2px solid rgba(0, 0, 255, 0.415);
+  box-shadow: rgba(0, 0, 255, 0.437) 0px 2px 4px;
+  outline: none;
 }
 
-strong{
-    color: blue;
+.form_group termo {
+  margin: 6px 0px 6px 0px;
 }
 
+strong {
+  color: blue;
+}
 
+button {
+  margin-top: 6px;
+  height: 30px;
+  width: 190px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 500px;
+  border: none;
+  border-radius: 5px;
+  background-color: #1B4BD9;
+  color: #fff;
+}
 
-button{
-    margin-top: 6px;
-    height: 30px;
-    width: 190px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
-    font-weight: 500px;
-    border-radius: 5px;
-    background-color: blue;
+a{
+    text-decoration: none;
     color: #fff;
 }
 
-button:hover{
-    background-color: #fff;
-    color: blue;
-    transition: 0.5s ease-in-out;
-    border: 1px solid blue;
+button:hover {
+  background-color: #fff;
+  color: #1B4BD9;
+  transition: 0.5s ease-in-out;
+  border: 1px solid #1B4BD9;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #1B4BD9;
 }
